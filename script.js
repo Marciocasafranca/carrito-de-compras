@@ -25,9 +25,9 @@ Producto.prototype.aplicarDescuento = function(descuento) {
 
 // Lista de productos (Uso de objetos y arrays)
 let productos = [
-    new Producto(1, "Camisa", 50, "img/camisa.jpg"),
-    new Producto(2, "Pantalón", 80, "img/pantalon.jpg"),
-    new Producto(3, "Zapatos", 120, "img/zapatos.jpg")
+    new Producto(1, "Camisa", 50, "camisa.jpg"),
+    new Producto(2, "Pantalón", 80, "pantalon.jpg"),
+    new Producto(3, "Zapatos", 120, "zapatos.jpg")
 ];
 
 // Mapa de stock de productos
