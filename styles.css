@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.productos, .carrito {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.productos h2, .carrito h2 {
+    text-align: center;
+    color: #333;
+}
+
+.productos div {
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#carrito-items {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito-items li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .productos, .carrito {
+        width: 90%;
+    }
+}
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.productos div {
+    animation: fadeIn 0.5s ease-in-out;
+}
